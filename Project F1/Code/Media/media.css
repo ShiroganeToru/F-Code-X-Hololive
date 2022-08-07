@@ -1,0 +1,44 @@
+@font-face {
+    font-family: GoogleSansBold;
+    src: url(/Font/GoogleSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(/Font/GoogleSans-Regular.ttf);
+}
+
+h1 {
+    font-family: GoogleSansBold;
+    color: #61DFEC;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.container > div {
+    margin: 25px;
+}
+
+span {
+    font-family: GoogleSans;
+    color: #aaa;
+}
+
+img {
+    border: 2px solid #61DFEC;
+    height: 30vh;
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.3);
+}

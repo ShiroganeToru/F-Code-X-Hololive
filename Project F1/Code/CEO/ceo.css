@@ -1,0 +1,77 @@
+@font-face {
+    font-family: GoogleSansBold;
+    src: url(font/GoogleSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(font/GoogleSans-Regular.ttf);
+}
+
+body {
+    font-family: GoogleSans;
+}
+
+img {
+    height: 60vh;
+    border-radius: 10px;
+    margin: 100px 225px;
+}
+
+h2 {
+    color: #61DFEC;
+    position: absolute;
+    height: 100px;
+    width: 550px;
+    top: 100px;
+    left: 600px;
+    z-index: 1;
+    font-family: GoogleSansBold;
+    font-size: 40px;
+}
+
+ul {
+    height: 100px;
+    width: 450px;
+    position: absolute;
+    top: 225px;
+    left: 600px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+button {
+    font-family: GoogleSansBold;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 450px;
+    left: 1000px;
+    z-index: 1;
+    background: #27C7FE;
+    color: white;
+    border: 2px solid #27C7FE;
+    border-radius: 1in;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 12px;
+}
+
+button:hover {
+    background-color: white;
+    color: #27C7FE;
+}
+
+a:hover {
+    color: #27C7FE;
+}

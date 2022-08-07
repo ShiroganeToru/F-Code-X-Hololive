@@ -1,0 +1,119 @@
+@font-face {
+    font-family: GoogleSansBold;
+    src: url(/Font/GoogleSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(/Font/GoogleSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: GoogleSansMedium;
+    src: url(/Font/GoogleSans-Medium.ttf);
+}
+
+body {font-family: GoogleSans;}
+
+h2 {
+    font-family: GoogleSans;
+    color: #61DFEC;
+    font-size: 50px;
+    margin: 100px 0 0 150px;
+    padding: 0;
+    width: 500px;
+}
+
+p {
+    color: #6c6c6c;
+    width: 350px;
+    margin: 10px 0 0 150px;
+}
+
+.triangle {
+    width: 500px;
+	height: 500px;
+    background-color: rgba(97, 223, 236, 0.5);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0px;
+    left: 560px;
+    z-index: 1;
+    clip-path: polygon(50% 15%, 100% 100%, 0 100%);
+}
+
+img {
+    height: 75vh;
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 700px;
+}
+
+.counter {
+    font-family: GoogleSansBold;
+    position: absolute;
+    color: #4F9FEF;
+    width: 68px;
+    height: 58px;
+    font-size: 50px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.counter.countries {
+    left: 235px;
+    top: 250px;
+}
+
+.tx.cnt {
+    left: 185px;
+    top: 300px;
+}
+
+.counter.talent {
+    left: 220px;
+    top: 400px;
+}
+
+.tx.tl {
+    left: 200px;
+    top: 450px;
+}
+
+.counter.years {
+    left: 460px;
+    top: 250px;
+}
+
+.tx.y {
+    left: 440px;
+    top: 300px;
+}
+
+.counter.subs {
+    left: 450px;
+    top: 400px;
+}
+
+.tx.subs {
+    left: 400px;
+    top: 450px;
+}
+
+.tx {
+    position: absolute;
+    width: 200px;
+    height: 38px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #AAAAAA;
+}

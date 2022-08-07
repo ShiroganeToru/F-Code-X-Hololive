@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Hololive Production</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="/Template/Logo Hololive.png" alt="Logo">
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-target="#navbarNav"
+                data-bs-toggle="collapse"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-lable="Toggle Navbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav item">
+                        <a href="#" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#" class="nav-link text-white">About</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#" class="nav-link text-white">CEO</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#" class="nav-link text-white">Talents</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#" class="nav-link text-white">Product</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#" class="nav-link text-white">Media</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#" class="nav-link text-white">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function(){
+            if(window.pageYOffset > 100){
+                nav.classList.add('bg-dark','shadow');
+            }else{
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        })
+    </script>
+    
+    <iframe src="/Code/Home/home.html" frameborder="0"></iframe>
+    <iframe src="/Code/CEO/ceo.html" frameborder="0"></iframe>
+    <iframe src="/Code/Talents/talent.html" frameborder="0"></iframe>
+    <iframe src="/Code/Media/media.html" frameborder="0"></iframe>
+</body>
+</html>

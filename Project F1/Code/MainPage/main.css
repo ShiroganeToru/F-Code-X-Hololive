@@ -1,0 +1,21 @@
+@font-face {
+    font-family: GoogleSans;
+    src: url(/Font/GoogleSans-Regular.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    font-family: GoogleSans;
+    color: #61DFEC;
+}
+iframe {
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    height: 7vh;
+}
