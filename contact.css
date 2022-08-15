@@ -1,125 +1,72 @@
+@font-face {
+    font-family: GoogleSans;
+    src: url(font/GoogleSans-Regular.ttf);
+}
+
 .contact__title {
     text-align: center;
-    
 }
 
 .contact__title h2 {
+    margin-top: 100px;
     color: #61DFEC;
-    font-family: 'Google Sans';
+    font-family: GoogleSans;
     font-style: normal;
     font-weight: 700;
     font-size: 3.5em;
     line-height: 1em;
 }
 
-.contact__box--avatar {
-    position: absolute;
-    width: 40%;
-    height: 80%;
-    right: 4%;
-    top: 7%;
-    border: 4px solid #1E1E2C;
-    border-radius: 10px;
-}
-.contact__content--box {
-    position: absolute;
+.contact__content  {
+    width: 100%;
     display: flex;
-    width: 40%;
-    height: 45%;
-    left: 2.5%;
-    right: 5px;
-    top: 25%;
-    border: 4px solid #000000;
-    border-radius: 8px;
+    justify-content: space-around;
 }
 
-.contact__box--infor {
-    position: absolute;
+.contact__content--box {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #14497D;
+    border-radius: 8px;
+}
+.contact__avatar--container {
     width: 50%;
-    height: 70%;
-    top: 25%;
-    left: 5%;
-    font-family: 'Google Sans';
+}
+.contact__box--avatar, .contact__box--avatar2 {
+    width: 100%;
+    height: 290px;
+    vertical-align: middle;
+    border: 2px solid #14497D;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.contact__box--title, .contact__box--title2 {
+    font-family: GoogleSans;
     font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 38px;
+    color: #14497D;
+}
+
+.contact__box--infor, .contact__box--infor2 {
+    font-family: GoogleSans;
     font-weight: 400;
     font-size: 1em;
     line-height: 27px;
-    color: #000000;
-}
-
-.contact__box--title {
-    position: absolute;
-    width: 50%;
-    height: 10%;
-    top: 5%;
-    left: 3%;
-    font-family: 'Google Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2em;
-    line-height: 38px;
-    color: #000000;
-}
-.contact__content--box2 {
-    position: absolute;
-    display: flex;
-    width: 40%;
-    height: 45%;
-    right: 2.5%;
-    left: 57%;
-    top: 25%;
-    border: 4px solid #000000;
-    border-radius: 8px;
-}
-
-.contact__box--title2 {
-    position: absolute;
-    width: 50%;
-    height: 10%;
-    top: 5%;
-    right: 3%;
-    font-family: 'Google Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2em;
-    line-height: 38px;
-    color: #000000;
-    text-align: right;
+    color: #14497D;
 }
 
 .contact__box--infor2 {
-    position: absolute;
-    width: 70%;
-    height: 70%;
-    top: 25%;
-    right: 3%;
-    font-family: 'Google Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 27px;
-    color: #000000;
     text-align: right;
 }
-
-.contact__box--avatar2 {
-    position: absolute;
-    width: 40%;
-    height: 80%;
-    left: 4%;
-    top: 7%;
-    border: 4px solid #1E1E2C;
-    border-radius: 10px;
-}
-
-/* .contact__content {
-    display: flex;
-} */
 
 .contact__footer {
     position: fixed;
     width: 100%;
-    height: 11%;
+    height: 8%;
     left: 0;
     bottom: 0;
     background: #61DFEC;
@@ -127,80 +74,112 @@
 }
 
 .contact__footer--img {
+    height: 70%;
     padding-top: 12px;
     padding-bottom: 12px;
+    object-fit: cover;
 }
 
+.isPlay_t {
+    animation-name: fade_t;
+    animation-duration: 1s;
+    transition: 1s ease;
+}
 
+.isPlay_l {
+    animation-name: fade_l;
+    animation-duration: 0.9s;
+    transition: 0.9s ease;
+}
+
+.isPlay_b {
+    animation-name: fade_b;
+    animation-duration: 0.9s;
+    transition: 0.9s ease;
+}
+
+@keyframes fade_t{
+    0% {transform: translateY(-90px); opacity: 0.2;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes fade_l {
+    0% {transform: translateX(-90px); opacity: 0.2;}
+    100% {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes fade_b {
+    0% {transform: translateY(90px); opacity: 0;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
 
 @media (max-width: 950px) {
     .contact__box--title, .contact__box--title2 {
         font-size: 1.5em;
     }
-    .contact__content--box, .contact__content--box2 {
-        height: 40%;
-    }
     .contact__box--avatar, .contact__box--avatar2 {
-        height: 70%;
+        height: 240px;
     }
 }
 
 @media (max-width: 712px) {
     .contact__box--title, .contact__box--title2 {
-        font-size: 1em;
+        font-size: 1em;        
+    }
+    .contact__box--title2 {
+        text-align: right;
     }
     .contact__box--infor, .contact__box--infor2 {
         font-size: 1em;
     }
-    .contact__content--box, .contact__content--box2 {
-        height: 37%;
-    }
     .contact__box--avatar, .contact__box--avatar2 {
-        height: 60%;
+        height: 220px;
     }
 }
 
 @media (max-width: 610px) {
     .contact__title h2 {
+        margin-top: 50px;
         font-size: 1.75em;
+    }
+    .contact__content  {
+        display: flex;
+        flex-wrap: wrap;
     }
     .contact__content--box, .contact__content--box2 {
         width: 70%;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        border: 2px solid #1E1E2C;
-    }
-    .contact__content--box {
-        top: 10%;
-    }
-    .contact__content--box2 {
-        top: 52%;
-    }
-    .contact__box--avatar, .contact__box--avatar2 {
-        border: 2px solid #1E1E2C;
+        margin-bottom: 20px;
     }
     .contact__footer {
-        height: 7%;
+        height: 50px;
     }
     .contact__footer--img {
         height: 70%;
-        padding-top: 1.5%;
-        padding-bottom: 2%;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .contact__footer {
+    position: sticky;
     }
 }
 
-@media (max-width: 333px) {
+@media (max-width: 437px) {
+    .contact__box--avatar, .contact__box--avatar2 {
+        height: 190px;
+    }
     .contact__box--title, .contact__box--title2 {
         font-size: 1em;
     }
     .contact__box--infor, .contact__box--infor2 {
         font-size: 0.8em;
     }
+    .contact__footer {
+        position: fixed;
+        }
 }
 
-@media (max-width: 271px) {
+@media (max-width: 360px) {
     .contact__content--box, .contact__content--box2 {
-        width: 230px;
+        width: 280px;
     }
 }

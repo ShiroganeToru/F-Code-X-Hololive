@@ -7,49 +7,111 @@
     <title>Product</title>
     <link rel="stylesheet" href="product.css">
     <script src="https://kit.fontawesome.com/9ddbcf2d8a.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
+    <!-- Product section starts -->
     <div class="product">
-        <div class="product__title">
-            <h2>VIDEOS</h2>
-            <div class="product__title--description">
-                <form action="#" >
-                    <input class="product__button--value" type="submit" value="View more" />
-                    <i class="fa-solid fa-caret-right product__button--icon"></i>
-                </form>
-                <!-- <button>
-                    <span>View more</span> -->
-                    
-                    <!-- <i class="fa-solid fa-circle-caret-right product__button--icon"></i> -->
-                <!-- </button> -->
-            </div>
+        <div class="product__header isPlay_t">
+            <h2 class="product__title">VIDEOS</h2>
         </div>
-        <div class="product__content">
-            <div class="product__content--box1">
-                <span class="product__box--thumbnail">
-                    Thumbnail
-                </span>
-                <span class="product__box--video-title">
-                    Title video
-                </span>
+        <section class="product__options isPlay_t">
+            <form action="#" class="product__option">
+                <input class="product__button--value" type="submit" value="All"/>
+            </form>
+            <form action="#" class="product__option">
+                <input class="product__button--value" type="submit" value="MV"/>
+            </form>
+            <form action="#" class="product__option">
+                <input class="product__button--value" type="submit" value="Movies"/>
+            </form>
+            <form action="#" class="product__option">
+                <input class="product__button--value" type="submit" value="Games"/>
+            </form>
+        </section>
+        <section class="product__list-videos swiper isPlay_l">
+            <div class="swiper-wrapper">
+                <!-- Video 1 -->
+                    <div class="swiper-slide product__container--video">
+                        <div class="product__video--img">
+                            <img src="media/product-video-1.jpg" alt="">
+                        </div>
+                        <a href="#">Mahoutsukai no Yome</a>
+                        <span>120 min | Thriller</span>
+                    </div>
+                <!-- Video 2 -->
+                    <div class="swiper-slide product__container--video">
+                        <div class="product__video--img">
+                            <img src="media/product-video-2.jpg" alt="">
+                        </div>
+                        <a href="#">Kaichou wa Maid-Sama</a>
+                        <span>120 min | Thriller</span>
+                    </div>
+                <!-- Video 3 -->
+                    <div class="swiper-slide product__container--video">
+                        <div class="product__video--img">
+                            <img src="media/product-video-3.jpg" alt="">
+                        </div>
+                        <a href="#">Kamisama Hajimemashita</a>
+                        <span>120 min | Thriller</span>
+                    </div>
+                <!-- Video 4 -->
+                    <div class="swiper-slide product__container--video">
+                        <div class="product__video--img">
+                            <img src="media/product-video-4.jpg" alt="">
+                        </div>
+                        <a href="#">Shokugeki No Souma</a>
+                        <span>120 min | Thriller</span>
+                    </div>
+                <!-- Video 5 -->
+                    <div class="swiper-slide product__container--video">
+                        <div class="product__video--img">
+                            <img src="media/product-video-5.jpg" alt="">
+                        </div>
+                        <a href="#">Tenki no ko</a>
+                        <span>120 min | Thriller</span>
+                    </div>
+                <!-- Video 6 -->
+                    <div class="swiper-slide product__container--video">
+                        <div class="product__video--img">
+                            <img src="media/product-video-6.jpg" alt="">
+                        </div>
+                        <a href="#">Kimi no Na wa</a>
+                        <span>120 min | Thriller</span>
+                    </div>
+                <!-- Video 7 -->
+                    <div class="swiper-slide product__container--video">
+                        <div class="product__video--img">
+                            <img src="media/product-video-7.jpg" alt="">
+                        </div>
+                        <a href="#">Ōkami Kodomo no Ame to Yuki</a>
+                        <span>120 min | Thriller</span>
+                    </div>
+                <!-- Video 8 -->
+                    <div class="swiper-slide product__container--video">
+                        <div class="product__video--img">
+                            <img src="media/product-video-8.jpg" alt="">
+                        </div>
+                        <a href="#">Kaguya-Sama Wa Kokurasetai</a>
+                        <span>120 min | Thriller</span>
+                    </div>
+                <!-- Video 9 -->
+                    <div class="swiper-slide product__container--video">
+                        <div class="product__video--img">
+                            <img src="media/product-video-9.jpg" alt="">
+                        </div>
+                        <a href="#">Hotarubi no Mori e</a>
+                        <span>120 min | Thriller</span>
+                    </div>
             </div>
-            <div class="product__content--box2">
-                <span class="product__box--thumbnail">
-                    Thumbnail
-                </span>
-                <span class="product__box--video-title">
-                    Title video
-                </span>
-            </div>
-            <div class="product__content--box3">
-                <span class="product__box--thumbnail">
-                    Thumbnail
-                </span>
-                <span class="product__box--video-title">
-                    Title video
-                </span>
-            </div>
-        </div>
+            <div class="swiper-pagination"></div>
+        </section>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Link to custom JS -->
+    <script src="product.js"></script>
+    <!-- Product section ends -->
 </body>
 </html>
