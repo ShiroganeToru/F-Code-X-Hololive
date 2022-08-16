@@ -113,20 +113,6 @@
     font-size: 0.95rem;
     opacity: 0.7;
 }
-
-.swiper-pagination-bullet {
-    width: 6px !important;
-    height: 6px !important;
-    border-radius: 0.2rem !important;
-    background: var(--main-color) !important;
-    opacity: 1 !important;
-}
-
-.swiper-pagination-bullet-active {
-    width: 1.5rem !important;
-    background: var(--secondary-color) !important;
-}
-
 .isPlay_t {
     animation-name: fade_t;
     animation-duration: 1s;
