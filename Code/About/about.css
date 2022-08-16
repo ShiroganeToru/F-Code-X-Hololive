@@ -43,28 +43,17 @@
 .about__title {
     height: 30%;
     font-family: GoogleSans;
-<<<<<<< HEAD
     font-size: 60px;
     color: var(--blue-light-color);
     font-weight: 900;
     line-height: auto;
-=======
-    font-size: 5rem;
-    color: var(--blue-light-color);
-    font-weight: 900;
-    line-height: 5.5rem;
->>>>>>> 0835141e9b0557a1b3920a7c9ed2e69f29811598
 }
 
 .about__description {
     width: 75%;
     margin-top: 5%;
     font-family: Roboto;
-<<<<<<< HEAD
     font-size: 30px;
-=======
-    font-size: 2rem;
->>>>>>> 0835141e9b0557a1b3920a7c9ed2e69f29811598
     line-height: 2.5rem;
     text-align: justify;
     color: var(--description-color);
