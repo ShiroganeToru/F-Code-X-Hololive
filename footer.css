@@ -22,6 +22,7 @@
 }
 
 .foot__container {
+    font-family: GoogleSans;
     background-color: var(--bg-color);
     padding: 50px 0;
     margin: 0 auto;
@@ -43,12 +44,17 @@
 
 .foot__list1 form input {
     width: 13em;
+    height: 2.5em;
     background-color: var(--fourth-color);
     border-radius: 5px;
     padding: 5px 0;
     border: 1px solid var(--bg-dark-color);
-    margin: 50px 10px 15px 10px;
+    margin: 40px 10px 30px 10px;
     color: var(--third-color);
+}
+
+.foot__list1 form input:hover {
+    cursor: pointer;
 }
 .foot__list2 {
     display: inline-block;
@@ -63,11 +69,12 @@
 .foot__logo {
     display: flex;
     justify-content: center;
-    margin: 20px 10px 15px 10px;
+    margin: 10px 10px 15px 10px;
 }
 .foot__logo figure {
     display: table-cell;
-    width: calc(100%-7em)
+    /* width: calc(100%-7em); */
+    margin: 5px 5px 5px 30px;
 }
 
 .foot__logo img {
@@ -78,7 +85,7 @@
 
 .foot__logo p {
     display: table-cell;
-    width: 7em;
+    width: 8em;
     vertical-align: middle;
     font-size: 1em;
     white-space: nowrap;
