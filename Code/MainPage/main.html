@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,4 +126,83 @@
 
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/e170072973.js" crossorigin="anonymous"></script>
+    <title>Hololive Production</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">
+            <img src="/Img/Logo Hololive.png" alt="Logo">
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+                <a href="#" class="text-aqua">Home</a>
+                <a href="#" class="text-aqua">About</a>
+                <a href="#" class="text-aqua">CEO</a>
+                <a href="#" class="text-aqua">Talents</a>
+                <a href="#" class="text-aqua">Product</a>
+                <a href="#" class="text-white1">Media</a>
+                <a href="#" class="text-white2">Contact</a>
+            <div class="btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header")
+            header.classList.toggle('sticky',window.scrollY > 0);
+
+            var a = document.querySelector('.text-white1')
+            a.classList.toggle('text-aqua',window.scrollY > 0);
+
+            var a = document.querySelector('.text-white2')
+            a.classList.toggle('text-aqua',window.scrollY > 0);
+
+            var a = document.querySelector('.text-white3')
+            a.classList.toggle('text-aqua',window.scrollY > 0);
+        });
+
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.fa-bars');
+        var closeBtn = document.querySelector('.fa-xmark');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+    </script>
+    
+    <iframe src="/Code/Home/home.html" frameborder="0"></iframe>
+    <iframe src="/Code/About/about.html" frameborder="0"></iframe>
+    <iframe src="/Code/CEO/ceo.html" frameborder="0"></iframe>
+    <iframe src="/Code/Talents/talent.html" frameborder="0"></iframe>
+    <iframe src="/Code/Product/product.html" frameborder="0"></iframe>
+    <iframe src="/Code/Media/media.html" frameborder="0"></iframe>
+    <iframe src="/Code/Contact/contact.html" frameborder="0"></iframe>
+    <iframe src="/Code/Footer/footer.html" frameborder="0"></iframe>
+
+    <button onclick="topFunction()" id="top_btn" title="Go to top">
+        <i class="fa-solid fa-caret-up"></i>
+        <div>To Top</div>
+    </button>
+    <script src="/Code/Top button/to-top-btn.js"></script>
+
+
+</body>
+>>>>>>> 0835141e9b0557a1b3920a7c9ed2e69f29811598
 </html>

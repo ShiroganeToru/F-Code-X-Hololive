@@ -17,6 +17,7 @@
             slidesPerView: 4,
         },
     },
+<<<<<<< HEAD
     // pagination: {
     //     el: ".swiper-pagination",
     //     clickable: true,
@@ -25,4 +26,14 @@
     //     nextEl: ".swiper-button-next",
     //     prevEl: ".swiper-button-prev"
     // },
+=======
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+>>>>>>> 0835141e9b0557a1b3920a7c9ed2e69f29811598
 });
