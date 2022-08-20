@@ -50,11 +50,10 @@
 }
 
 .about__description {
-    width: 75%;
+    width: 80%;
     margin-top: 5%;
     font-family: Roboto;
     font-size: 30px;
-    line-height: 2.5rem;
     text-align: justify;
     color: var(--description-color);
 }

@@ -1,11 +1,11 @@
 @font-face {
     font-family: GoogleSans;
-    src: url(font/GoogleSans-Regular.ttf);
+    src: url(/Font/GoogleSans-Regular.ttf);
 }
 
 @font-face {
   font-family: GoogleSansBold;
-  src: url(font/GoogleSans-Bold.ttf);
+  src: url(/Font/GoogleSans-Bold.ttf);
 }
 
 body {
@@ -116,6 +116,40 @@ body {
     padding: 0px;
   }
  }
+
+ .isPlay_t {
+  animation-name: fade_t;
+  animation-duration: 1s;
+  transition: 1s ease;
+}
+
+.isPlay_l {
+  animation-name: fade_l;
+  animation-duration: 0.9s;
+  transition: 0.9s ease;
+}
+
+.isPlay_r {
+  animation-name: fade_r;
+  animation-duration: 0.9s;
+  transition: 0.9s ease;
+}
+
+@keyframes fade_t{
+  0% {transform: translateY(-90px); opacity: 0.2;}
+  100% {transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes fade_l {
+  0% {transform: translateX(-90px); opacity: 0.2;}
+  100% {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes fade_r {
+  0% {transform: translateX(90px); opacity: 0;}
+  100% {transform: translateX(0px); opacity: 1;}
+}
+
  @media (max-width: 768px) {
   .bg img {
     height: 60vh;

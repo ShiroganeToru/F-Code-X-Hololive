@@ -82,6 +82,28 @@ a:hover {
     color: #27C7FE;
 }
 
+.isPlay_l {
+    animation-name: fade_l;
+    animation-duration: 0.9s;
+    transition: 0.9s ease;
+}
+
+.isPlay_r {
+    animation-name: fade_r;
+    animation-duration: 0.9s;
+    transition: 0.9s ease;
+}
+
+@keyframes fade_l {
+    0% {transform: translateX(-90px); opacity: 0.2;}
+    100% {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes fade_r {
+    0% {transform: translateX(90px); opacity: 0;}
+    100% {transform: translateX(0px); opacity: 1;}
+}
+
 @media (max-width: 1160px){
     img {
         margin: 100px 100px;
