@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: GoogleSansBold;
     src: url(/Font/GoogleSans-Bold.ttf);
@@ -283,4 +284,291 @@ img {
         left: 125px;
         height: 40vh;
     }
+=======
+@font-face {
+    font-family: GoogleSansBold;
+    src: url(/Font/GoogleSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(/Font/GoogleSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: GoogleSansMedium;
+    src: url(/Font/GoogleSans-Medium.ttf);
+}
+
+body {font-family: GoogleSans;}
+
+h2 {
+    font-family: GoogleSans;
+    color: #61DFEC;
+    font-size: 50px;
+    margin: 100px 0 0 150px;
+    padding: 0;
+    width: 400px;
+    transition: 0.4s;
+}
+
+p {
+    color: #6c6c6c;
+    width: 350px;
+    margin: 10px 0 0 150px;
+    transition: 0.4s;
+}
+
+.triangle {
+    width: 500px;
+	height: 500px;
+    background-color: rgba(97, 223, 236, 0.5);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -250px;
+    left: 560px;
+    z-index: 1;
+    clip-path: polygon(50% 15%, 100% 100%, 0 100%);
+    transition: 0.4s;
+}
+
+.counter-container {
+    transition: 0.4s;
+}
+
+img {
+    height: 75vh;
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 700px;
+    transition: 0.4s;
+}
+
+.counter {
+    font-family: GoogleSansBold;
+    position: absolute;
+    color: #4F9FEF;
+    width: 68px;
+    height: 58px;
+    font-size: 50px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.counter.countries {
+    left: 235px;
+    top: 250px;
+}
+
+.tx.cnt {
+    left: 185px;
+    top: 300px;
+}
+
+.counter.talent {
+    left: 220px;
+    top: 400px;
+}
+
+.tx.tl {
+    left: 200px;
+    top: 450px;
+}
+
+.counter.years {
+    left: 460px;
+    top: 250px;
+}
+
+.tx.y {
+    left: 440px;
+    top: 300px;
+}
+
+.counter.subs {
+    left: 450px;
+    top: 400px;
+}
+
+.tx.subs {
+    left: 400px;
+    top: 450px;
+}
+
+.tx {
+    position: absolute;
+    width: 200px;
+    height: 38px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #AAAAAA;
+}
+
+.shape {
+    transform: scale(90%);
+}
+
+.isPlay_t {
+    animation-name: fade_t;
+    animation-duration: 1s;
+    transition: 1s ease;
+}
+
+.isPlay_l {
+    animation-name: fade_l;
+    animation-duration: 0.9s;
+    transition: 0.9s ease;
+}
+
+.isPlay_r {
+    animation-name: fade_r;
+    animation-duration: 0.9s;
+    transition: 0.9s ease;
+}
+
+@keyframes fade_t{
+    0% {transform: translateY(-90px); opacity: 0.2;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes fade_l {
+    0% {transform: translateX(-90px); opacity: 0.2;}
+    100% {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes fade_r {
+    0% {transform: translateX(90px); opacity: 0;}
+    100% {transform: translateX(0px); opacity: 1;}
+}
+
+@media (max-width: 1060px){
+    h2 {
+        margin: 100px 0 0 120px;
+    }
+
+    p {
+        margin: 10px 0 0 120px;
+    }
+
+    .counter-container {
+        position: absolute;
+        top: 0px;
+        left: -50px;
+    }
+
+    .shape {
+        transform: scale(90%);
+    }
+
+    .triangle {
+        left: 425px;
+        top: -200px;
+    }
+
+    img {
+        left: 550px;
+    }
+}
+
+@media (max-width: 1024px){
+    h2 {
+        margin: 100px 0 0 75px;
+    }
+
+    p {
+        margin: 10px 0 0 75px;
+    }
+
+    .counter-container {
+        position: absolute;
+        top: 0px;
+        left: -75px;
+    }
+
+    .triangle {
+        left: 400px;
+        top: -200px;
+    }
+
+    img {
+        left: 525px;
+    }
+}
+
+@media (max-width: 768px){
+    h2 {
+        margin: 100px 0 0 50px;
+        font-size: 40px;
+    }
+
+    p {
+        margin: 10px 0 0 50px;
+    }
+
+    .counter-container {
+        position: absolute;
+        top: 25px;
+        left: -75px;
+        transform: scale(75%);
+    }
+
+    .triangle {
+        left: 325px;
+        top: -200px;
+    }
+
+    .shape {
+        transform: scale(60%);
+    }
+
+    img {
+        left: 425px;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 425px){
+    h2 {
+        margin: 0 0 0 75px;
+        font-size: 40px;
+        width: 300px
+    }
+
+    p {
+        margin: 10px 0 0 75px;
+        width: 250px;
+    }
+
+    .counter-container {
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        transform: scale(75%);
+    }
+
+    .triangle {
+        left: -100px;
+        top: 350px;
+    }
+
+    .shape {
+        transform: scale(50%);
+    }
+
+    img {
+        top: 325px;
+        left: 125px;
+        height: 40vh;
+    }
+>>>>>>> 61be47413918d647810bfa07b01e2a0db4db510f
 }
