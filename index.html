@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/e170072973.js" crossorigin="anonymous"></script>
+    <title>Hololive Production</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">
+            <img src="./Img/Logo Hololive.png" alt="Logo">
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+                <a href="#home" class="text-aqua">Home</a>
+                <a href="#about" class="text-aqua">About</a>
+                <a href="#ceo" class="text-aqua">CEO</a>
+                <a href="#talents" class="text-aqua">Talents</a>
+                <a href="#product" class="text-aqua">Product</a>
+                <a href="#media" class="text-white1">Media</a>
+                <a href="#contact" class="text-white2">Contact</a>
+        </div>
+        <div class="btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header")
+            header.classList.toggle('sticky',window.scrollY > 0);
+
+            var a = document.querySelector('.text-white1')
+            a.classList.toggle('text-aqua',window.scrollY > 0);
+
+            var a = document.querySelector('.text-white2')
+            a.classList.toggle('text-aqua',window.scrollY > 0);
+        });
+
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.fa-bars');
+        var closeBtn = document.querySelector('.fa-xmark');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+    </script>
+    
+    <div class="iframe-div">
+        <iframe src="./Code/Home/home.html" frameborder="0" id="home"></iframe>
+    </div>
+    <div class="iframe-div">
+        <iframe src="./Code/About/about.html" frameborder="0" id="about"></iframe>
+    </div>
+    <div class="iframe-div">
+        <iframe src="./Code/CEO/ceo.html" frameborder="0" id="ceo"></iframe>
+    </div>
+    <div class="iframe-div">
+        <iframe src="./Code/Talents/talent.html" frameborder="0" id="talents"></iframe>
+    </div>
+    <div class="iframe-div">
+        <iframe src="./Code/Product/product.html" frameborder="0" id="product"></iframe>
+    </div>
+    <div class="iframe-div">
+        <iframe src="./Code/Media/media.html" frameborder="0" id="media"></iframe>
+    </div>
+    <div class="iframe-div">
+        <iframe src="./Code/Contact/contact.html" frameborder="0" id="contact"></iframe>
+    </div>
+    
+    <div class="foot__container isPlay_b">
+        <div class="foot__chanel">
+            <a href="https://www.facebook.com/hololivetv">
+                <i class="fa-brands fa-youtube foot__icon"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/hololivetv">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+        <div class="foot__list1">
+            <form action="#" class="" id="">
+                <input type="submit" class="" id="" value="Audition">
+            </form>
+            <form action="#" class="" id="">
+                <input type="submit" class="" id="" value="Derivative Work">
+            </form>
+        </div>
+        <div class="foot__list2">
+            <a class="" href="#">Company・Recruit</a>
+            <div class="foot__list2">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact us</a>
+            </div>
+            
+        </div>
+        <div class="foot__logo">
+            <p>Operating Company</p>
+            <figure>
+                <img src="./Img/foot_logo.png" alt="">
+            </figure>
+        </div>
+        <small class="foot__copyright">@ 2016 COVER Corp</small>
+    </div>
+
+    <button onclick="topFunction()" id="top_btn" title="Go to top">
+        <i class="fa-solid fa-caret-up"></i>
+        <div>To Top</div>
+    </button>
+    <script src="./Code/Top button/to-top-btn.js"></script>
+
+
+</body>
+</html>
