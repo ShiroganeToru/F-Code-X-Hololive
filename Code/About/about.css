@@ -1,11 +1,11 @@
 @font-face {
     font-family: GoogleSans;
-    src: url(/Font/GoogleSans-Regular.ttf);
+    src: url(../../Font/GoogleSans-Regular.ttf);
 }
 
 @font-face {
     font-family: Roboto;
-    src: url(/Font/Roboto-400.ttf);
+    src: url(../../Font/Roboto-400.ttf);
 }
 
 :root {
